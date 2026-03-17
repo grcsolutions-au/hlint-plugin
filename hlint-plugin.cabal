@@ -45,3 +45,7 @@ library
         hs-source-dirs: ghc96
         build-depends: hlint >= 3.6   && < 3.7
                      , ghc   >= 9.6   && < 9.8
+    if impl(ghc >= 9.10 && < 9.12)
+        hs-source-dirs: ghc910
+        build-depends: hlint
+                     , ghc
